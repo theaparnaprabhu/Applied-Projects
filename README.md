@@ -1,7 +1,7 @@
 # Applied-Projects
 Applied, hands-on projects that go beyond quick learning exercises — real builds combining hardware, firmware, and design.
 This repo houses my mid-scale, hands-on projects — things that started as learning exercises 
-but grew into complete, working builds. Unlike my [Minor Projects](link-to-repo) repo (quick 
+but grew into complete, working builds. Unlike my Minor Projects repo (quick 
 experiments and learning snippets), these projects involve full design cycles: schematic, PCB 
 layout, firmware, and testing.
 
