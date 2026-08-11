@@ -15,4 +15,3 @@ and notes on what I learned.
 | [Smart Office Automation PCB](./smart-office-automation) | Custom PCB for automating office lighting, temperature, and occupancy sensing | KiCad, ESP32, C/C++ |
 | ... | ... | ... |
 
-## Structure
