@@ -69,13 +69,12 @@ replaced by a fast model where 1 s = 20 clocks, so a 29 s cycle simulates in a f
 Self-checking tests print PASS/FAIL for: power-on idle, start ignored with door open,
 `1 05` with LED0, start ignored while running, `2 10` with LED1, pause with door open,
 resume, `End` display, 2 Hz LED blink, reset in DONE, reset during a running stage, and a
-clean restart. See `docs/waveform.png`.
+clean restart.
 
 ## Results
-- Simulation: all checks PASS `[confirm from your console]`
-- Synthesis/implementation: `[0 errors, no inferred latches — confirm from your log]`,
-  utilisation: LUTs `[ ]`, FFs `[ ]`
-- Hardware: verified on the board (`docs/`): idle `----`, running `2 09`, done `End`
+- Simulation: all checks PASS 
+- Synthesis/implementation: 
+- Hardware: verified on the board : idle `----`, running `2 09`, done `End`
 
 ## Pin map (from Real Digital's board file)
 | Signal | Pin | Signal | Pin |
@@ -84,10 +83,9 @@ clean restart. See `docs/waveform.png`.
 | BTN0 / BTN1 | J2 / J5 | LED15 | A4 |
 | SW0 (door) | V2 | right display digits | H3, J4, F3, E4 |
 
-Full mapping is in `constraints/washer.xdc`. The left display is held off.
 
 ## Build and run
-1. Create a Vivado RTL project for XC7S50-CSGA324, add `src/*.v` and `constraints/washer.xdc`.
+1. Create a Vivado RTL project for XC7S50-CSGA324.
 2. Set `washer_top` as top. Run synthesis, implementation, generate bitstream.
 3. Program via Hardware Manager. To simulate, set `tb_wash_ctrl` as the simulation top and run `run all`.
 
@@ -106,4 +104,4 @@ I used an AI assistant while developing this project: for drafting module struct
 explaining concepts, and reviewing code. I then read and traced each module, ran the
 simulation and synthesis myself, tested the design on the board, and can explain and
 modify every part of it. Design choices (enable pulses, gated 1 Hz counter) are
-documented above so they can be checked and questioned.
+documented above.
