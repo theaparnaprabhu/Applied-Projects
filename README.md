@@ -13,5 +13,5 @@ and notes on what I learned.
 | Project | Description | Tech Stack |
 |---|---|---|
 | Smart Office Automation PCB| Custom PCB for automating office lighting, temperature, and occupancy sensing | KiCad, ESP32, C/C++ |
-| ... | ... | ... |
+| FPGA Washing Machine Controller | FSM-based washing machine controller on a Spartan-7 FPGA with door pause/resume, debounced inputs and a multiplexed seven-segment display | Verilog, Vivado, Real Digital Boolean Board |
 
